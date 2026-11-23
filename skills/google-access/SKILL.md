@@ -32,7 +32,7 @@ gog -a <alias> --readonly --no-input gmail search 'is:unread newer_than:2d' --ma
 gog -a <alias> --readonly --no-input gmail thread get <threadId> -j --wrap-untrusted
 gog -a <alias> --readonly --no-input drive search "name contains 'lease'" --max 10
 gog -a <alias> --readonly --no-input sheets get <spreadsheetId> 'A1:F20'
-gog -a <alias> --readonly --no-input docs cat <docId>
+gog -a <alias> --readonly --no-input docs cat <docId> -j --wrap-untrusted
 ```
 
 Keep `--max` small. Fetch a full message or document body only when the answer needs it.
